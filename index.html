@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Biswamitra Majhi — Portfolio</title>
+    <meta name="description" content="Portfolio of Biswamitra Majhi — Web & Graphic Designer" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo"><img src="1000009447.jpg" alt="" height="55px" width="55px">
+                </div>
+                <div>
+                    <div style="font-weight:800">Biswamitra Majhi</div>
+                    <div style="font-size:13px;color:var(--muted)">Web & Graphic Designer • CSE Student</div>
+                </div>
+            </div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-left">
+                    <h1>Hello — I'm Biswamitra. I build clean websites & visual identities.</h1>
+                    <p>I design and develop responsive websites, brand graphics and simple UI/UX. I'm currently a 3rd-year CSE student learning full-stack web development and building projects to showcase my skills.</p>
+                    <div class="cta">
+                        <button class="btn btn-primary" onclick="scrollToSection('projects')">See My Work!</button>
+                        <a class="btn btn-ghost" href="#contact">Hire / Contact!</a>
+                    </div>
+
+                    <div style="margin-top:20px">
+                        <h4 style="margin:0 0 8px">Quick Infomation</h4>
+                        <div style="display:flex;gap:10px;flex-wrap:wrap">
+                            <div class="card" style="display:inline-block;padding:10px;border-radius:10px;min-width:110px;text-align:center">3+ Projects</div>
+                            <div class="card" style="display:inline-block;padding:10px;border-radius:10px;min-width:110px;text-align:center">Available for freelance</div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="card">
+                    <h3 style="margin-top:0">Contact</h3>
+                    <p style="color:var(--muted);margin:8px 0">Email: <strong>biswamitramajhi183@Gmail.com</strong><br>Phone No: <strong>8895367186/8847883887</strong><br>Location: Bhubaneswar, Odisha</p>
+                    <div style="margin-top:12px">
+                        <a href="#contact" class="btn btn-primary" style="width:100%">Message Me!</a>
+                    </div>
+                </aside>
+            </section>
+
+            <section id="projects" style="margin-top:28px">
+                <h2 style="margin-bottom:12px">Selected projects</h2>
+                <div class="projects">
+                    <article class="proj-item card">
+                        <h4 style="margin:0 0 6px">E-commerce demo</h4>
+                        <p style="color:var(--muted);font-size:14px;margin:0 0 8px">A clean product listing with cart and checkout UI (HTML/CSS/JS).</p>
+                        <a href="#" style="font-weight:700">View →</a>
+                    </article>
+
+                    <article class="proj-item card">
+                        <h4 style="margin:0 0 6px"> Portfolio design</h4>
+                        <p style="color:var(--muted);font-size:14px;margin:0 0 8px">A responsive portfolio built with modern layout and interactions.</p>
+                        <a href="#" style="font-weight:700">View →</a>
+                    </article>
+
+                    <article class="proj-item card">
+                        <h4 style="margin:0 0 6px"> Branding pack</h4>
+                        <p style="color:var(--muted);font-size:14px;margin:0 0 8px">Logo, business card and social templates for a clothing brand.</p>
+                        <a href="#" style="font-weight:700">View →</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="skills" style="margin-top:28px">
+                <h2 style="margin-bottom:8px">Skills</h2>
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">WordPress</span>
+                    <span class="skill">C program</span>
+                    <span class="skill">Photoshop</span>
+                </div>
+            </section>
+
+            <section id="about" style="margin-top:28px">
+                <h2>About me</h2>
+                <div class="card" style="margin-top:12px">
+                    <p style="color:var(--muted);margin:0">I’m a CSE student focusing on front-end development and graphic design. I love turning ideas into clean, usable interfaces. Outside of coding I enjoy watching design tutorials and practising English speaking skills.</p>
+                </div>
+            </section>
+
+            <section id="contact" style="margin-top:28px">
+                <h2>Contact</h2>
+                <div class="card" style="margin-top:12px">
+                    <form onsubmit="handleContact(event)" style="display:grid;gap:10px">
+                        <input type="text" id="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+                        <input type="email" id="email" placeholder="Your email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+                        <textarea id="msg" rows="4" placeholder="Message" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+                        <button class="btn btn-primary" type="submit" style="width:160px">Send message</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            © <span id="year"></span> Biswamitra Majhi — Built with ❤️
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
